@@ -27,7 +27,7 @@ dependencies {
 Add GitHub Packages credentials to your `~/.gradle/gradle.properties`:
 
 ```properties
-gpr.usr=YOUR_GITHUB_USERNAME
+gpr.user=YOUR_GITHUB_USERNAME
 gpr.key=YOUR_GITHUB_TOKEN
 ```
 
