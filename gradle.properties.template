@@ -1,0 +1,10 @@
+# GitHub Packages credentials for emvlibrary dependency
+# Store this file in ~/.gradle/gradle.properties (Unix/macOS/WSL)
+# or %USERPROFILE%\.gradle\gradle.properties (Windows)
+#
+# Or set these as environment variables:
+# - GITHUB_ACTOR
+# - GITHUB_TOKEN
+
+gpr.usr=YOUR_GITHUB_USERNAME
+gpr.key=YOUR_GITHUB_TOKEN_WITH_READ_PACKAGES_SCOPE
