@@ -21,8 +21,11 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
       
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+      
       - name: Publish to GitHub Packages
-        run: gradle publishReleasePublicationToGitHubPackagesRepository
+        run: ./gradlew publishReleasePublicationToGitHubPackagesRepository
         env:
           GITHUB_ACTOR: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
