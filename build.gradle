@@ -30,6 +30,9 @@ android {
     testOptions {
         targetSdk = 35
     }
+    publishing {
+        singleVariant('release')
+    }
 }
 
 dependencies {
@@ -46,7 +49,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.wwopenfare'
                 artifactId = 'emvlibrary'
-                version = '1.0.1'
+                version = '1.0.4'
             }
         }
         repositories {
