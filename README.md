@@ -1,6 +1,6 @@
 # EMV Library
 
-A standalone Android library for EMV (Europay, MasterCard, Visa) card reading and processing.
+A standalone Android library for EMV (Europay, MasterCard, Visa) NFC card reading and limited processing - excluding POS transactions. 
 
 ## Overview
 
