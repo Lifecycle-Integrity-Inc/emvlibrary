@@ -1,0 +1,29 @@
+<resources>
+    <string name="select_ppse_no_dirs">Select PPSE APDU Response - Cannot Find Directories tag BFOC. Try another card</string>
+    <string name="select_ppse_zero_dirs">Select PPSE APDU Response - no directories. Try another card</string>
+    <string name="dirs_invalid_content">Directories Tag has invalid content. Try another card</string>
+    <string name="select_ppse_not_6f">Select PPSE Response is not FCI Template tag 6F. Try another card</string>
+    <string name="select_adf_error">Error while selecting ADF for first directory. Most likely, the card is not activated. Use another card</string>
+    <string name="emv_error_3">EmvTag Error 3. Invalid EMV Tag Length Length. Rank </string>
+    <string name="emv_error_4">EmvTag Error 4. Invalid EMV Tag Value Length=</string>
+    <string name="emv_error_7">Error 7. FindTag called for non-template</string>
+    <string name="emv_error_8">Error 8. Cannot find Tag </string>
+    <string name="emv_syntx_1">Syntax error 1. invalid rank parameter. Must be >0</string>
+    <string name="emv_syntx_2">Syntax error 2. Invalid rawData byte array</string>
+    <string name="emv_syntx_3">Syntax error 3. Invalid rawData or index</string>
+    <string name="emv_syntx_4">Syntax error 4. expectedLength  can not be negative</string>
+    <string name="emv_valid_tag">This is a void EMV TAg for failed APDU Response</string>
+    <string name="emv_err_2">EmvTag Error 2. Invalid EMV Tag Code Length. Rank</string>
+    <string name="emv_err_5">EmvTag Error 5. Tag length is beyond the allocated raw data</string>
+    <string name="card_no_pan">The data retrieved from the card does not have PAN</string>
+    <string name="card_not_activatd">Card might not be activated</string>
+    <string name="copy_clip">**** The card summary below is copied to the clipboard</string>
+    <string name="present_form">EMV Tag Codes are hexadecimal, Value Lengths are decimal, Values presented in hex and strings</string>
+    <string name="tap_another">**** You can now tap a card again ****</string>
+    <string name="pan_from">PAN (or Device PAN in case of Google Pay or Apple Pay) is retrieved from:</string>
+    <string name="next_dir_tap">***** This card has more directories. If you tap it again, the next directory will be used *****</string>
+    <string name="purchase_full_version">Purchase full version of NFC EMV EXPLORER to see all data\n\n</string>
+    <string name="retap_card">Retap the card and verify PAN/DPAN\n</string>
+    <string name="content_is_hidden">\n ***** CONTENT IS HIDDEN *****\n</string>
+    <string name="end_of_response_content">\n---- End of Response Content.\n</string>
+   </resources>

@@ -1,0 +1,30 @@
+# Android Studio / IntelliJ - EMV library
+    *.iml
+    .gradle
+    /local.properties
+    /.idea/caches
+    /.idea/libraries
+    /.idea/modules.xml
+    /.idea/workspace.xml
+    /.idea/navEditor.xml
+    /.idea/assetWizardSettings.xml
+    .DS_Store
+
+    # Build files
+    /build
+    /*/build
+    /caches
+
+    # APK files
+    *.apk
+    *.aab
+
+    # Sensitive or local configuration files
+    # (You might add more here if you have specific local config)
+
+    # If you ever create a 'captures' folder for screenshots
+    /captures/
+
+    # Keystore files (NEVER commit these)
+    *.jks
+    *.keystore
