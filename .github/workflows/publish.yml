@@ -24,8 +24,21 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       
-      - name: Publish to GitHub Packages
-        run: ./gradlew publishMavenAndroidPublicationToGitHubPackagesRepository
+      - name: List gradle tasks
+        run: ./gradlew tasks --all 2>&1 | grep -i publish || echo "No publish tasks found"
+        continue-on-error: true
+      
+      - name: Check environment variables
+        run: |
+          echo "GITHUB_ACTOR: $GITHUB_ACTOR"
+          echo "PUBLISH_TOKEN is set: $([ -z "$GITHUB_TOKEN" ] && echo 'NO' || echo 'YES')"
+          ./gradlew --version
+        env:
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+      
+      - name: Publish to GitHub Packages (with full debug output)
+        run: ./gradlew publishMavenAndroidPublicationToGitHubPackagesRepository --info --stacktrace --debug 2>&1
         env:
           GITHUB_ACTOR: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
